@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roleta de Oração</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="spinBtn">Gire!</div>
+    <div class="wheel">
+      <div class="content" style="--i:1;--clr:#db7093;"><span>Louvor</span></div>
+      <div class="content" style="--i:2;--clr:#70d4db;"><span>Adoração</span></div>
+      <div class="content" style="--i:3;--clr:#c0a047;"><span>Consagração<br>entrega</span></div>
+      <div class="content" style="--i:4;--clr:#bb1a4f;"><span>Confição de <br>pecados</span></div>
+      <div class="content" style="--i:5;--clr:#ec252f;"><span>Pedidos <br>pessoais</span></div>
+      <div class="content" style="--i:6;--clr:#ff682d;"><span>Pela<br>família</span></div>
+      <div class="content" style="--i:7;--clr:#2f6b3e;"><span>Pelo Pequeno<br>Grupo</span></div>
+      <div class="content" style="--i:8;--clr:#3a78ff;"><span>Pela<br>Igreja</span></div>
+      <div class="content" style="--i:9;--clr:#f856fd;"><span>Leitura da<br>palavra</span></div>
+      <div class="content" style="--i:10;--clr:#5a8d43;"><span>Confissão da<br>palavra</span></div>
+      <div class="content" style="--i:11;--clr:#115388;"><span>Salvação de<br>amigos</span></div>
+      <div class="content" style="--i:12;--clr:#ffd000;"><span>Ações de<br>graça</span></div>
+    </div>
+  </div>
+  <script>
+    let wheel = document.querySelector('.wheel');
+    let spinBtn = document.querySelector('.spinBtn');
+    let value = Math.ceil(Math.random() *3600);
+
+    spinBtn.onclick = function() {
+      wheel.style.transform = "rotate("+ value + "deg)";
+      value += Math.ceil(Math.random() *3600);
+    }
+  </script>
+</body>
+</html>
