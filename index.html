@@ -7,13 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h2>Disco de Oração</h2>
+    <p>"Então, nem uma hora pudestes vós vigiar comigo?"<br>(Mt 26:40)</p>
+  </header>
   <div class="container">
     <div class="spinBtn">Gire!</div>
     <div class="wheel">
       <div class="content" style="--i:1;--clr:#db7093;"><span>Louvor</span></div>
       <div class="content" style="--i:2;--clr:#70d4db;"><span>Adoração</span></div>
       <div class="content" style="--i:3;--clr:#c0a047;"><span>Consagração<br>entrega</span></div>
-      <div class="content" style="--i:4;--clr:#bb1a4f;"><span>Confição de <br>pecados</span></div>
+      <div class="content" style="--i:4;--clr:#bb1a4f;"><span>Confissão de <br>pecados</span></div>
       <div class="content" style="--i:5;--clr:#ec252f;"><span>Pedidos <br>pessoais</span></div>
       <div class="content" style="--i:6;--clr:#ff682d;"><span>Pela<br>família</span></div>
       <div class="content" style="--i:7;--clr:#2f6b3e;"><span>Pelo Pequeno<br>Grupo</span></div>
@@ -24,15 +28,34 @@
       <div class="content" style="--i:12;--clr:#ffd000;"><span>Ações de<br>graça</span></div>
     </div>
   </div>
-  <script>
-    let wheel = document.querySelector('.wheel');
-    let spinBtn = document.querySelector('.spinBtn');
-    let value = Math.ceil(Math.random() *3600);
-
-    spinBtn.onclick = function() {
-      wheel.style.transform = "rotate("+ value + "deg)";
-      value += Math.ceil(Math.random() *3600);
-    }
-  </script>
+  <section class="legendas">
+     <ul class="contentItens">
+      <li class="itensLegend"><h2 class="titleContent">Louvor</h2>
+        <p class="legendContent">Exalte á Deus pelos seus poderosos feitos cante louvores ao senhor.</p></li>
+        <li class="itensLegend"><h2 class="titleContent">Adoração</h2>
+          <p class="legendContent">Expresse o seu amor a Deus reconhecendo sua santidade, bondade e amor.</p></li>
+          <li class="itensLegend"><h2 class="titleContent">Consagração entrega</h2>
+            <p class="legendContent">Entregue a Deus todos os seus problemas. Lance sobre Ele toda a sua ansiedade.</p></li>
+            <li class="itensLegend"><h2 class="titleContent">Confissão de pecados</h2>
+              <p class="legendContent">Peça ao Senhor que sonde o seu coração e então confesse todo pecado diante dEle</p></li>
+              <li class="itensLegend"><h2 class="titleContent">Pedidos pessoais</h2>
+                <p class="legendContent">Coloque seus alvos pessoais diante de Deus. Lembre-se que todo o que pede recebe.</p></li>
+                <li class="itensLegend"><h2 class="titleContent">Pela Familia</h2>
+                  <p class="legendContent">Apresente seus familiares diante de Deus para proteção, salvação e avivamento.</p></li>
+                  <li class="itensLegend"><h2 class="titleContent">Pelo Pequeno Grupo</h2>
+                    <p class="legendContent">Ore pela saúde de seu pequeno grupo e pela multiplicação do mesmo.</p></li>
+                    <li class="itensLegend"><h2 class="titleContent">Pela Igreja</h2>
+                      <p class="legendContent">Ore pelos pastores, pelas finanças, pela construção e pelas reuniões da igreja.</p></li>
+                      <li class="itensLegend"><h2 class="titleContent">Leitura da palavra</h2>
+                        <p class="legendContent">Tenha um plano de leitura biblica. Leia pelo menos dois capítulos diariamente.</p></li>
+                        <li class="itensLegend"><h2 class="titleContent">Confissão da palavra</h2>
+                          <p class="legendContent">Separe uma promessa da Palavra e confesse-a em voz alta crendo com o coração.</p></li>
+                          <li class="itensLegend"><h2 class="titleContent">Salvação de amigos</h2>
+                            <p class="legendContent">Coloque-se na brecha em favor de amigos e conhecidos. A vontade de Deus é que todo homem seja salvo.</p></li>
+                            <li class="itensLegend"><h2 class="titleContent">Ações de graça</h2>
+                              <p class="legendContent">Enumere as bençãos que você tenha recebido e tenha um coração grato diante de Deus</p></li>
+     </ul>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
